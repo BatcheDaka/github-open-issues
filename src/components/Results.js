@@ -3,8 +3,10 @@ import ListRepos from './ListRepos';
 
 
 function Results(props) {
+
     const {repos} = props;
-    const listRepos = repos.length !==0  ?  repos.data.map( (item) =>
+ 
+    const listRepos = repos.length !==0  ?  repos.map( (item) =>
     <li key={item.id}>Title: <a href={item.html_url}>{item.title}{item.assignee}</a></li>)
      : <li>No Issues found for this repo</li>;
   
