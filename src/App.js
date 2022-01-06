@@ -1,9 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+
+import SearchBar from './components/SearchBar';
+
 
 function App() {
   return (
-    <h1>hello</h1>
+   <div>
+     <h1>Repo Search</h1>
+     <SearchBar />
+    
+   </div>
   );
 }
 
