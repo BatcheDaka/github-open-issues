@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import Results from './Results';
 import Pagination from './Pagination';
+import './SearchBar.css'
 function SearchBar() {
   
     const [searchInput, setSearchInput] = useState('');
@@ -46,13 +47,14 @@ localStorage.setItem("prevRepo",  JSON.stringify(result))
 //   else {
 //       currentPosts = [];
 //   }
-console.log(currentPosts);
+
 
 const paginate = (pageNumber) => setCurrentPages(pageNumber);
+console.log(currentPosts);
   return (
     <> 
-    <div style={{padding: "20px"}}>
-   <input type="text" placeholder="Search" value={searchInput} onChange={handleChange}/>
+    <div className="container">
+   <input className="query" type="text" placeholder="Search by user/repo" value={searchInput} onChange={handleChange}/>
    <button onClick={handleClick}>Search</button>
     </div>
     <Results repos={currentPosts || []}/>

@@ -1,0 +1,34 @@
+button {
+    padding: 5px;
+    border: 3px solid;
+    margin: 2px;
+    color: white;
+    background-color: #C6826B;
+    font-family: 'Slabo 27px', serif;
+    text-transform: uppercase;
+  }
+  .query {
+    
+        padding: 5px;
+        font-family: 'Helvetica', serif;
+        font-size-adjust: 0.54;
+        font-size: 22px;
+  }
+  h1 {
+    font-family: 'Gravitas One', cursive;
+    margin-bottom: 8px;
+    font-size: 25px;
+    color: #297C74;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .container {
+    display: block;
+    width: 750px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  
