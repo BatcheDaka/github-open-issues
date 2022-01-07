@@ -63,3 +63,4 @@ const paginate = (pageNumber) => setCurrentPages(pageNumber);
 }
 
 export default SearchBar;
+

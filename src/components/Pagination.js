@@ -11,7 +11,8 @@ console.log(totalPosts)
         <ul>
             {pageNumbers.map(number => 
                 <li key={number}>
-<a onClick={() => paginate(number)} href="">
+<a onClick={(e) => { e.preventDefault()
+   paginate(number)}} href="">
 {number}</a>
                 </li>)}
         </ul>
